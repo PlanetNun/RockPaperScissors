@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+/*color*/
+
+body {
+  background-color: black;
+}
+
+header {
+  background-color: rgb(111, 0, 206, 0.66);
+}
+
+#main-panel {
+  background-color: #fff;
+}
+
+#result-display-panel {
+  background-color: rgba(111, 0, 208, 0.66);
+}
+
+#game-score-board {
+  background-color: rgb(255, 255, 255);
+}
+
+#reset-button-panel {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/*font*/
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  margin: 30px;
+}
+
+h3 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+p,
+span {
+  color: rgb(111, 0, 206);
+}
+
+/*frame and alignment -body */
+body {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/*frame and alignment -main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#main-panel {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  min-height: 300px;
+  align-items: center;
+}
+
+#result-display-panel {
+  min-height: 150px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-container {
+  width: 250px;
+  height: 250px;
+  display: flex;
+
+}
+
+.game-image {
+  border-radius: 50%;
+  border: 10px solid rgb(111, 0, 206);
+}
+
+/*game-score-board*/
+#game-score-board {
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+
+}
+
+/*reset-button-panel*/
+#reset-button-panel {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  padding: 25px 55px;
+  min-width: 100px;
+  font-size: 1.5rem;
+  font-family: 'Times New Roman';
+  background-color: rgb(111, 0, 206);
+  font-weight: 600;
+  color: #fff;
+  border-radius: 50%;
+  border: 0;
+  box-shadow: black 5px 5px 5px;
+}
+
+/*Animation and visual effect*/
+.game-image:hover {
+  border: 3px solid rgb(111, 0, 206, 0.4);
+  transform: rotate(225deg);
+  transition: all 500ms ease-in 50ms;
+}
+
+.game-image:active {
+  filter: drop-shadow(rgb(111, 0, 206) 0px 0px 75px);
+}
+
+input:active {
+  background-color: rgb(111, 0, 206);
+  border: 0;
+  box-shadow: none;
+  transform: translate(5px, 5px);
+  transition: all 100ms ease-in 50ms;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="icon" type="image/x-icon" href="./rock-on-svgrepo-com.svg">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Rock Paper Scissors</h1>
+  </header>
+  <main>
+    <div id="main-panel">
+      <div class="image-container">
+        <img class="game-image" id="rock" src="./rock-paper-scissors-296854_1280.png"
+          onclick="computersRandomChoice(); userChoiceIsRock(); showGameResult();" alt="Rock" />
+      </div>
+      <div class="image-container">
+        <img class="game-image" id="paper" src="./rock-paper-scissors-296855_1280.png"
+          onclick="computersRandomChoice(); userChoiceIsPaper(); showGameResult();" alt="Paper">
+      </div>
+      <div class="image-container">
+        <img class="game-image" id="scissors" src="./rock-paper-scissors-296853_1280.png"
+          onclick="computersRandomChoice(); userChoiceIsScissors(); showGameResult();" alt="Scissors" />
+      </div>
+    </div>
+    <div id="result-display-panel"></div>
+    <div id="game-score-board">
+      <p>Wins: <span id="userWinsCount">0</span> Losses: <span id="userLossesCount">0</span> Ties: <span
+          id="countTies">0</span></p>
+    </div>
+    <div id="reset-button-panel">
+      <input type="button" id="reset-button" value="Reset Score" onclick="resetGame();"></button>
+    </div>
+  </main>
+</body>
+
+</html>
